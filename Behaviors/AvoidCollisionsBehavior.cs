@@ -21,7 +21,7 @@ namespace GSAI
             _first_minimum_separation = 0;
             _first_distance = 0;
 
-            var neighbor_count = proximity._FindNeighbors(_callback);
+            var neighbor_count = proximity._FindNeighbors(_ReportNeighbor);
 
             if(neighbor_count == 0 || _first_neighbor == null)
             {
